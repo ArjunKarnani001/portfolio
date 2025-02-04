@@ -1,0 +1,31 @@
+.hover-left:hover + .hover-target {
+  transform: translateX(-36rem);
+  transition: transform 1s ease-out;
+}
+
+/* Hover to the right */
+.hover-right:hover + .hover-target {
+  transform: translateX(36rem);
+  transition: transform 1s ease-out;
+}
+
+.hover-trigger:hover + .hover-target .hover-border-target-one {
+  border: 2px solid #fafafa;
+  padding-left: 2rem;
+  padding-top: 1.2rem;
+  padding-right: 2rem;
+  margin-top: -1.2rem;
+  border-radius: 5px;
+  transition: all 1.25s ease-in-out;
+}
+
+.hover-trigger:hover + .hover-target .hover-border-target-two {
+  border: 2px solid #fafafa;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.2rem;
+  margin-top: 1.2rem;
+  border-radius: 5px;
+  transition: all 1.25s ease-in-out;
+}
+
