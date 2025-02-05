@@ -54,29 +54,29 @@ import github3 from "../assets/github3.png";
 export const navigation = [
   {
     id: "0",
-    title: "Education",
-    url: "#education",
+    title: "Home",
+    url: "#home",
+    // onlyMobile: true,
   },
   {
     id: "1",
+    title: "About Me",
+    url: "#aboutme",
+  },
+  {
+    id: "2",
     title: "Experience",
     url: "#experience",
   },
   {
-    id: "2",
+    id: "3",
     title: "Projects",
     url: "#projects",
   },
   {
-    id: "3",
+    id: "4",
     title: "Contact",
     url: "#contact",
-  },
-  {
-    id: "4",
-    title: "New Account",
-    url: "#login",
-    onlyMobile: true,
   },
   {
     id: "5",
@@ -89,7 +89,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [python, cplusplus, mysql, pandas, aws, powerbi];
+export const codingLanguages = [python, cplusplus, mysql, pandas, aws, powerbi];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -291,7 +291,7 @@ export const projects = [
     iconUrl: github2,
     imageUrl: benefitImage2,
     light: true,
-    imageLink: "https://github.com/ArjunKarnani001/RowdyHacks_App",
+    imageLink: "https://github.com/ArjunKarnani001/ml_research",
   },
   {
     id: "2",
@@ -318,6 +318,7 @@ export const projects = [
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: github2,
     imageUrl: benefitImage2,
+    imageLink: "https://github.com/ArjunKarnani001/portfolio",
   },
 ];
 

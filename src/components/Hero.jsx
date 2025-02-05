@@ -8,8 +8,9 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
-import CompanyLogos from "./CompanyLogos";
+import CompanyLogos from "./CodingLanguages";
 import "./Hero.css";
+import robotar_no_bg from "../assets/robotar_no_bg.png";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -20,7 +21,7 @@ const Hero = () => {
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
-      id="hero"
+      id="home"
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
@@ -41,7 +42,7 @@ const Hero = () => {
             Science, and Computer Vision—building solutions that bridge ideas
             and impact.
           </p>
-          <Button href="/pricing" white>
+          <Button href="https://www.linkedin.com/in/arjun-karnani/" white>
             Let's Connect
           </Button>
         </div>
@@ -130,7 +131,10 @@ const Hero = () => {
         </div>
       </div> */}
 
-      <div className="mt-[27rem] mb-[8rem] ml-[8rem] relative z-[2]">
+      <div
+        className="mt-[27rem] mb-[8rem] ml-[8rem] relative z-[2]"
+        id="aboutme"
+      >
         <div className="card">
           <div className="card-content">
             <p className="card-title h1">About Me</p>

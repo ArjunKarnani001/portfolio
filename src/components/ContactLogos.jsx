@@ -2,7 +2,7 @@ import React from "react";
 import { companyLogos } from "../constants";
 import "./CompanyLogos.css";
 
-const CompanyLogos = ({ className }) => {
+const ContactLogos = ({ className }) => {
   return (
     <div className={`${className} company-logos-container`}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
@@ -22,4 +22,4 @@ const CompanyLogos = ({ className }) => {
   );
 };
 
-export default CompanyLogos;
+export default ContactLogos;

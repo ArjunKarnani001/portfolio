@@ -1,16 +1,16 @@
-.company-logos-container {
+.coding-languages-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.company-logos-container h5 {
+.coding-langauges-container h5 {
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 1.5rem;
 }
 
-.company-logos-container ul {
+.coding-languages-container ul {
   display: flex;
 }
 
@@ -23,7 +23,7 @@
   transition: transform 0.3s ease-in-out;
 } */
 
-.company-logos-container img {
+.coding-languages-container img {
   /* width: 84px;
   height: 25px; */
   filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.6));
@@ -31,7 +31,7 @@
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.company-logos-container img:hover {
+.coding-languages-container img:hover {
   filter: drop-shadow(0 0 15px rgba(0, 123, 255, 1));
   transform: scale(1.1);
 }

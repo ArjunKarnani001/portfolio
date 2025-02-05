@@ -13,7 +13,7 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 const Experiences = () => {
   return (
-    <Section crosses>
+    <Section crosses id="experience">
       <h1 className="h1 mb-[5rem] -mt-[5rem]  text-white text-center">
         Experiences
       </h1>

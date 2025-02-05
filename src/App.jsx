@@ -7,6 +7,7 @@ import Experiences from "./components/Experiences";
 import ExperiencesTwo from "./components/ExperiencesTwo";
 import ExperiencesThree from "./components/ExperiencesThree";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
 
         <ProjectsTwo />
         <Skills />
+        <Contact />
       </div>
       <ButtonGradient />
     </>
