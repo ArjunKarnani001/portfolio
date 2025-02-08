@@ -17,7 +17,13 @@ const ExperiencesTwo = () => {
             {experience1Text}
           </p> */}
 
-          <div className="relative left-[6rem] top-[0rem] flex w-[20rem] h-[17rem] aspect-square border border-n-6 rounded-lg -translate-x-1/2 scale-75 md:scale-100">
+          <div
+            className="relative left-[6rem] top-[0rem] flex w-[20rem] h-[17rem] aspect-square border border-n-6 rounded-lg -translate-x-1/2 scale-75 md:scale-100"
+            style={{
+              marginTop: window.innerWidth <= 640 ? "7rem" : "0rem",
+              marginLeft: window.innerWidth <= 640 ? "5rem" : "0rem",
+            }}
+          >
             <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
               <img
                 src={headstarter}
@@ -37,25 +43,23 @@ const ExperiencesTwo = () => {
 
             <RightCurve />
           </div>
-          <div className="relative left-[23rem] top-[3rem] flex w-[20rem] h-[17rem] aspect-square border border-n-6 rounded-lg -translate-x-1/2 scale-75 md:scale-100">
-            <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-              <img
-                src={headstarter_two}
-                width={308}
-                height={108}
-                alt="uh"
-                style={{
-                  // border: "2px solid white",
-                  maxWidth: "95%", // Restricts the width to fit within the box
-                  maxHeight: "95%",
-                  // filter: "drop-shadow(0 0 35px rgba(0, 123, 255, 0.6))",
-                  borderRadius: "10px",
-                }}
-              />
+          {window.innerWidth > 640 && (
+            <div className="relative left-[23rem] top-[3rem] flex w-[20rem] h-[17rem] aspect-square border border-n-6 rounded-lg -translate-x-1/2 scale-75 md:scale-100">
+              <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
+                <img
+                  src={headstarter_two}
+                  width={308}
+                  height={108}
+                  alt="uh"
+                  style={{
+                    maxWidth: "95%",
+                    maxHeight: "95%",
+                    borderRadius: "10px",
+                  }}
+                />
+              </div>
             </div>
-
-            <LeftCurve />
-          </div>
+          )}
         </div>
 
         <div className="max-w-[70rem]">

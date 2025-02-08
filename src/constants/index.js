@@ -276,7 +276,7 @@ export const projects = [
   {
     id: "0",
     title: "Library Database Web App",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "A website that helps libraries manage books, users, and borrowing records easily.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: github,
     imageUrl: benefitImage2,
@@ -286,7 +286,7 @@ export const projects = [
   {
     id: "1",
     title: "Diabetes Type II Research",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "A study using data and machine learning to predict future healthcare costs for Type II diabetes patients, helping improve financial planning and patient care.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: github2,
     imageUrl: benefitImage2,
@@ -296,7 +296,7 @@ export const projects = [
   {
     id: "2",
     title: "ASL Interpretter Web App",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    text: "A web tool that translates American Sign Language into text for better communication.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: github3,
     imageUrl: benefitImage2,
@@ -305,7 +305,7 @@ export const projects = [
   {
     id: "3",
     title: "CoogQuest Mobile App",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "A mobile app that engages students with campus activities through fun challenges and rewards.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: github,
     imageUrl: benefitImage2,
@@ -314,7 +314,7 @@ export const projects = [
   {
     id: "4",
     title: "Portfolio",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "A personal website showcasing my work, projects, and experiences in an interactive way.",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: github2,
     imageUrl: benefitImage2,

@@ -44,13 +44,18 @@ const Experiences = () => {
           {/* <Button>Check it Out </Button> */}
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
+        <div
+          className="lg:ml-auto xl:w-[38rem] mt-4 sm:w-[20rem]"
+          style={{
+            marginTop: window.innerWidth <= 640 ? "-5rem" : "0rem", // Moves up only on mobile
+          }}
+        >
           {/* <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {experience1Text}
           </p> */}
 
-          <div className="relative left-1/2 top-[3rem] flex w-[27rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
-            <div className="flex w-[18rem] aspect-square m-auto border border-n-6 rounded-full">
+          <div className="relative left-1/2 top-[3rem] flex w-[27rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-[0.75] md:scale-100 sm:scale-[0.3] xs:scale-[0.2]">
+            <div className="flex w-[17rem] aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[7rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img src={brainwaveSymbol} width={68} height={68} alt="uh" />

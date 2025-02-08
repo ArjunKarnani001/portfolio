@@ -10,7 +10,7 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CodingLanguages";
 import "./Hero.css";
-import robotar_no_bg from "../assets/robotar_no_bg.png";
+import robotar_no_bg from "../assets/robotar_no_bg_2.jpg";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -97,9 +97,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative bottom-[43rem]">
+      {/* <div className="relative bottom-[43rem]">
         <BottomLine />
-      </div>
+      </div> */}
 
       {/* <div className="mt-[27rem] mb-[8rem] ml-[8rem] relative z-[2]">
         <h3 className="h1 mb-[5rem] -mt[15rem] text-white mr-[8rem]">
@@ -132,8 +132,11 @@ const Hero = () => {
       </div> */}
 
       <div
-        className="mt-[27rem] mb-[8rem] ml-[8rem] relative z-[2]"
+        className="mt-[15rem] mb-[8rem] ml-[8rem] relative z-[2] md:max-w-5xl sm:max-w-2"
         id="aboutme"
+        style={{
+          marginTop: window.innerWidth <= 640 ? "7rem" : "15rem", // Moves up only on mobile
+        }}
       >
         <div className="card">
           <div className="card-content">
@@ -148,14 +151,14 @@ const Hero = () => {
                 , <strong>Data Science</strong>, and{" "}
                 <strong>Computer Vision</strong>.
               </li>
-              <li>
+              <li className="hidden sm:block">
                 I enjoy working on projects that solve real-world problems.
               </li>
-              <li>
+              <li className="hidden sm:block">
                 I love exploring new technologies, brainstorming creative
                 solutions, and collaborating with others to bring ideas to life.
               </li>
-              <li>
+              <li className="hidden sm:block">
                 When I’m not coding, I’m diving into financial markets or am at
                 the gym.
               </li>
