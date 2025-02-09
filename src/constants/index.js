@@ -177,6 +177,18 @@ export const experience2 = [
   },
 ];
 
+export const experience3Text1 =
+  "At iChain Consulting, I utilized SQL to analyze and optimize supply chain databases, improving operational workflows. I conducted data analysis using Python and R, creating impactful client visualizations in Tableau and Power BI. My insights helped identify three major delivery bottlenecks, leading to improved efficiency and decision-making. I also presented data-driven recommendations in strategic meetings, assisting clients in overcoming critical supply chain challenges.";
+
+export const experience3 = [
+  {
+    id: "0",
+    title: "Work Experience",
+    text: experience3Text1,
+  },
+  { id: "1", title: "Languages & Frameworks" },
+];
+
 export const collabApps = [
   {
     id: "0",
@@ -282,6 +294,7 @@ export const projects = [
     imageUrl: benefitImage2,
     light: true,
     imageLink: "https://github.com/jeremyudo/library_webapp",
+    websiteLink: "https://arjunkarnani.com",
   },
   {
     id: "1",
@@ -292,6 +305,8 @@ export const projects = [
     imageUrl: benefitImage2,
     light: true,
     imageLink: "https://github.com/ArjunKarnani001/ml_research",
+    websiteLink:
+      "https://drive.google.com/file/d/1xwvcMl9slKgr36OxziTiHLFIyzs6QtB6/view?usp=sharing",
   },
   {
     id: "2",
@@ -301,6 +316,7 @@ export const projects = [
     iconUrl: github3,
     imageUrl: benefitImage2,
     imageLink: "https://github.com/ArjunKarnani001/RowdyHacks_App",
+    websiteLink: "https://arjunkarnani.com",
   },
   {
     id: "3",
@@ -310,6 +326,7 @@ export const projects = [
     iconUrl: github,
     imageUrl: benefitImage2,
     light: true,
+    websiteLink: "https://arjunkarnani.com",
   },
   {
     id: "4",
@@ -319,6 +336,7 @@ export const projects = [
     iconUrl: github2,
     imageUrl: benefitImage2,
     imageLink: "https://github.com/ArjunKarnani001/portfolio",
+    websiteLink: "https://arjunkarnani.com",
   },
 ];
 

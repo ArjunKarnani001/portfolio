@@ -63,12 +63,30 @@ const ExperiencesTwo = () => {
         </div>
 
         <div className="max-w-[70rem]">
-          <h3 className="h2 mb-4 md:mb-8 mr-[4rem] text-right">Headstarter</h3>
-          <h5 className="h5 mb-4 md:mb-8 mr-[4rem] text-right">
+          <h3
+            className="h2 mb-4 md:mb-8 mr-[4rem] text-right"
+            style={{
+              marginRight: window.innerWidth <= 640 ? "0rem" : "4rem", // Moves up only on mobile
+              marginTop: window.innerWidth <= 640 ? "2rem" : "0rem",
+            }}
+          >
+            Headstarter
+          </h3>
+          <h5
+            className="h5 mb-4 md:mb-8 mr-[4rem] text-right"
+            style={{
+              marginRight: window.innerWidth <= 640 ? "0rem" : "4rem", // Moves up only on mobile
+            }}
+          >
             Software Engineering Fellow
           </h5>
 
-          <ul className="max-w-[38rem] mb-10 md:mb-14">
+          <ul
+            className="max-w-[38rem] mb-10 md:mb-14"
+            style={{
+              marginRight: window.innerWidth <= 640 ? "-3.5rem" : "4rem", // Moves up only on mobile
+            }}
+          >
             {experience2.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex justify-end items-center gap-2">

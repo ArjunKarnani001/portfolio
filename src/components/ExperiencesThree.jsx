@@ -6,6 +6,8 @@ import {
   experience1,
   experience1Text1,
   experience1Text2,
+  experience3,
+  experience3Text1,
 } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
@@ -14,7 +16,12 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 const ExperiencesThree = () => {
   return (
     <Section>
-      <div className="container lg:flex">
+      <div
+        className="container lg:flex"
+        style={{
+          marginTop: window.innerWidth <= 640 ? "-4rem" : "0rem", // Moves up only on mobile
+        }}
+      >
         <div className="max-w-[70rem]">
           <h3 className="h2 mb-4 md:mb-8">iChain Consulting LLC</h3>
           <h5 className="h5 mb-4 md:mb-8">Intern</h5>
@@ -24,7 +31,7 @@ const ExperiencesThree = () => {
           </h6> */}
 
           <ul className="max-w-[35rem] mb-10 md:mb-14">
-            {experience1.map((item) => (
+            {experience3.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
                   <img src={check} width={24} height={24} alt="check" />
@@ -36,14 +43,10 @@ const ExperiencesThree = () => {
               </li>
             ))}
           </ul>
-
-          {/* <Button>Check it Out </Button> */}
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          {/* <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
-            {experience1Text}
-          </p> */}
+        {/* <div className="lg:ml-auto xl:w-[38rem] mt-4">
+
 
           <div className="relative left-1/2 top-[3rem] flex w-[27rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-[18rem] aspect-square m-auto border border-n-6 rounded-full">
@@ -94,10 +97,10 @@ const ExperiencesThree = () => {
               ))}
             </ul>
 
-            {/* <LeftCurve /> */}
+
             <RightCurve />
           </div>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

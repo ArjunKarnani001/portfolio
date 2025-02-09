@@ -18,7 +18,12 @@ const Experiences = () => {
         Experiences
       </h1>
 
-      <div className="container lg:flex">
+      <div
+        className="container lg:flex"
+        style={{
+          marginTop: window.innerWidth <= 640 ? "-3rem" : "0rem", // Moves up only on mobile
+        }}
+      >
         <div className="max-w-[70rem]">
           <h3 className="h2 mb-4 md:mb-8">University of Houston</h3>
           <h5 className="h5 mb-4 md:mb-8">ERAS Research Fellow</h5>

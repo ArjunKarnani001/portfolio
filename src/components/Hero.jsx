@@ -10,14 +10,18 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CodingLanguages";
 import "./Hero.css";
-import robotar_no_bg from "../assets/robotar_no_bg_2.jpg";
+import robotar_no_bg from "../assets/robotar_final-2.jpg";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.jpg";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpeg";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25rem]"
+      className="pt-[12rem] -mt-[5.25rem] mb-[-15rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -53,7 +57,7 @@ const Hero = () => {
 
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src={robot}
+                  src={robotar_no_bg}
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
@@ -132,10 +136,12 @@ const Hero = () => {
       </div> */}
 
       <div
-        className="mt-[15rem] mb-[8rem] ml-[8rem] relative z-[2] md:max-w-5xl sm:max-w-2"
+        className="mt-[15rem] mb-[8rem] ml-[3rem] relative z-[2] md:max-w-5xl sm:max-w-2"
         id="aboutme"
         style={{
-          marginTop: window.innerWidth <= 640 ? "7rem" : "15rem", // Moves up only on mobile
+          marginTop: window.innerWidth <= 640 ? "7rem" : "15rem",
+          marginLeft: window.innerWidth <= 640 ? "8rem" : "3rem",
+          marginBottom: window.innerWidth <= 640 ? "23rem" : "8rem",
         }}
       >
         <div className="card">
@@ -166,6 +172,29 @@ const Hero = () => {
             </ul>
           </div>
         </div>
+      </div>
+
+      <div className="hidden md:block ml-[64rem] relative w-[300px] h-[300px] top-[-650px]">
+        <img
+          src={image2}
+          alt="Image 2"
+          className="absolute top-[-20px] left-[-220px] w-[270px] h-auto border border-black object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:z-10"
+        />
+        <img
+          src={image4}
+          alt="Image 4"
+          className="absolute top-[100px] left-[0px] w-[200px] h-[350px] border border-conic-gradient object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:z-10"
+        />
+        <img
+          src={image3}
+          alt="Image 3"
+          className="absolute top-[420px] left-[-180px] w-[220px] h-auto border border-conic-gradient object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:z-10"
+        />
+        <img
+          src={image1}
+          alt="Image 1"
+          className="absolute top-[230px] left-[180px] w-[220px] h-auto border border-black object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:z-10"
+        />
       </div>
 
       {/* <BottomLine /> */}
